@@ -2,9 +2,10 @@
 
 This repository marks my personal journey to learn and implement the most basic ingredients of a program - algorithms and data structures.
 
-## Materials
+## Reference
 
 - [coursera algorithm part 1](https://www.coursera.org/learn/algorithms-part1)
+- [leetcode](https://leetcode.com/problemset/all/)
 
 ## Asymptotic Analysis
 
@@ -27,11 +28,11 @@ This repository marks my personal journey to learn and implement the most basic 
 | O(N)     | big oh    | upper bound, worst case    |
 | Ω(N)     | big omega | lower bound, best case     |
 
-If one algorithm has same (or wihtin constant factor) upper bound and lower bound, we say it is optimal.
+If one algorithm has the same (or wihtin constant factor) upper bound and lower bound, we say it is optimal.
 
 ### (Memory) Space
 
-For primitives it is a fixed byte size; For array it is the size of each item multiplied by N; For object it must include overhead, reference and padding.
+For primitives it is a fixed byte size; for arrays it is the size of each item multiplied by N; for an object it must include overhead, reference and padding.
 
 ## Setup
 
