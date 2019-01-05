@@ -2,14 +2,16 @@
 
 This repository marks my personal journey to learn and implement the most basic ingredients of a program - algorithms and data structures.
 
-## Reference
+## References
 
 - [coursera algorithm part 1](https://www.coursera.org/learn/algorithms-part1)
 - [leetcode](https://leetcode.com/problemset/all/)
 
 ## Asymptotic Analysis
 
-### (Running) Time
+To measure the performance of an algorithm, we need to look at its running time and memory space size.
+
+### Time
 
 | order of growth | name         | example                      |
 | --------------- | ------------ | ---------------------------- |
@@ -30,7 +32,7 @@ This repository marks my personal journey to learn and implement the most basic 
 
 If one algorithm has the same (or wihtin constant factor) upper bound and lower bound, we say it is optimal.
 
-### (Memory) Space
+### Space
 
 For primitives it is a fixed byte size; for arrays it is the size of each item multiplied by N; for an object it must include overhead, reference and padding.
 
