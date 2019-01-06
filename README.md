@@ -45,7 +45,7 @@ Check [this](https://conda.io/docs/user-guide/install/index.html) out to install
 conda create -n fundamentals python=3.6
 
 # activate environment
-conda activate fundamentals
+source activate fundamentals
 
 # install jupyter
 conda install jupyter
