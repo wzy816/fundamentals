@@ -7,6 +7,7 @@ This repository marks my personal journey to learn and implement the most basic 
 - [coursera algorithm part 1](https://www.coursera.org/learn/algorithms-part1)
 - [leetcode](https://leetcode.com/problemset/all/)
 - CLRS
+- [scalacaster](https://github.com/vkostyukov/scalacaster) in Scala
 
 ## Asymptotic Analysis
 
