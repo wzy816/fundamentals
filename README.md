@@ -6,7 +6,8 @@ This repository marks my personal journey to learn and implement the most basic 
 
 - [coursera algorithm part 1](https://www.coursera.org/learn/algorithms-part1)
 - [leetcode](https://leetcode.com/problemset/all/)
-- introduction to algorithms, aka. [CLRS](https://en.wikipedia.org/wiki/Introduction_to_Algorithms)
+- introduction to algorithms, aka. [CLRS](https://en.wikipedia.org/wiki/Introduction_to_Algorithms
+- [deep learning](https://www.deeplearningbook.org/)
 
 ## Asymptotic Analysis
 
