@@ -9,7 +9,7 @@
 - sort 179 493
 - set 217 219 220
 - bit ops 136 137
-- misc 238
+- misc 238 189
 - backtrack 46 47 78 90 39 40 
 
 ## linked list
@@ -17,7 +17,10 @@
 - dedup 82 83
 - search 287
 - modify in-place 328
+- two-pointer 61
 
 ## string
 
 - backtrack 431 131
+- misc 796
+- ord 848
