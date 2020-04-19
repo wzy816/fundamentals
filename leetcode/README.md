@@ -17,6 +17,6 @@
 - search 287
 - modify in-place 328
 
-## String
+## string
 
-- backtrack 46 47
+- backtrack 46 47 78 90
