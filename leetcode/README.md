@@ -22,5 +22,5 @@
 ## string
 
 - backtrack 431 131
-- misc 796
+- misc 796 8 10
 - ord 848
