@@ -27,5 +27,5 @@
 - dp 10 44
 
 ## stack & queue
-- basic ops 232 225
+- basic ops 232 225 946
 - auxiliary 155
