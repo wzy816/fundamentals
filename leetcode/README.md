@@ -28,3 +28,4 @@
 
 ## stack & queue
 - basic ops 232 225
+- auxiliary 155
