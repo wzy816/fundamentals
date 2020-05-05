@@ -29,3 +29,7 @@
 ## stack & queue
 - basic ops 232 225 946
 - auxiliary 155
+
+## dp & backtrack
+- fibonacci 70 746
+- grid 403
