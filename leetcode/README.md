@@ -36,3 +36,4 @@
 
 ## number
 - bit 191
+- recursion 50
