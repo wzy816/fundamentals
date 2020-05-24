@@ -8,7 +8,7 @@
 - on-line 53
 - sort 179 493
 - set 217 219 220
-- bit ops 136 137
+- bit 136 137
 - misc 238 189
 - backtrack 46 47 78 90 39 40 
 
@@ -33,3 +33,6 @@
 ## dp & backtrack
 - fibonacci 70 746 790
 - grid 403 79 62 63 980
+
+## number
+- bit 191
