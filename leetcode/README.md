@@ -9,7 +9,7 @@
 - sort 179 493
 - set 217 219 220
 - bit 136 137
-- misc 238 189
+- misc 238 189 54
 - backtrack 46 47 78 90 39 40 
 
 ## linked list
