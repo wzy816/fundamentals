@@ -37,3 +37,4 @@
 ## number
 - bit 191
 - recursion 50 263
+- misc 1296 846
