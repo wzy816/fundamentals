@@ -27,16 +27,18 @@
 - dp 10 44
 
 ## stack & queue
-- basic ops 232 225 946
-- auxiliary 155
+- basic ops 232 225 946 **20**
+- auxiliary **155**
 - circular 622
 
 ## dp & backtrack
 - fibonacci 70 746 790
 - grid 403 79 62 63 980
-- bfs 200 752 279
+- bfs **200** **752** **279**
 
 ## number
 - bit 191
 - recursion 50 263
 - misc 1296 846
+
+**Bold** is from explore learning card.
