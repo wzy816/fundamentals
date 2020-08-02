@@ -27,8 +27,8 @@
 - dp 10 44
 
 ## stack & queue
-- basic ops 232 225 946 **20**
-- auxiliary **155**
+- basic ops 232 225 946 **20** 
+- auxiliary **155** **150** **739**
 - circular 622
 
 ## dp & backtrack
