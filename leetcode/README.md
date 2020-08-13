@@ -18,7 +18,7 @@
 - dedup 82 83
 - search 287
 - modify in-place 328
-- two-pointer 61
+- two-pointer 61 **141** **142**
 
 ## string
 
