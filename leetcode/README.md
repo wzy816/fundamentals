@@ -14,6 +14,7 @@
 
 ## linked list
 
+- basic **707**
 - dedup 82 83
 - search 287
 - modify in-place 328
