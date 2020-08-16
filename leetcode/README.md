@@ -14,11 +14,10 @@
 
 ## linked list
 
-- basic **707**
+- classic **707** **206** **203** **328** **234**
 - dedup 82 83
 - search 287
-- modify in-place 328
-- two-pointer 61 **141** **142**
+- two-pointer 61 **141** **142** **160** **19**
 
 ## string
 
