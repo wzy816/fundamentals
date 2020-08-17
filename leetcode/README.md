@@ -17,8 +17,9 @@
 - classic **707** **206** **203** **328** **234**
 - dedup 82 83
 - search 287
-- two-pointer 61 **141** **142** **160** **19**
-- merge **21**
+- two-pointer **141** **142** **160** **19** **61**
+- two linked list **21** **2**
+- additional pointer **430** **138**
 
 ## string
 
