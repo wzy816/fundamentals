@@ -45,4 +45,8 @@
 - recursion 50 263
 - misc 1296 846
 
+## hash table
+- basic **705** **706**
+
+
 **Bold** is from explore learning card.
