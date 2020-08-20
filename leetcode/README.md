@@ -46,8 +46,8 @@
 - misc 1296 846
 
 ## hash table & hash set
-- basic **705** **706**
-- dedup **217** **136**
+- design **705** **706** 
+- basic **349** **1** **217** **136** **202** **205**
 
 
 **Bold** is from explore learning card.
