@@ -45,8 +45,9 @@
 - recursion 50 263
 - misc 1296 846
 
-## hash table
+## hash table & hash set
 - basic **705** **706**
+- dedup **217** **136**
 
 
 **Bold** is from explore learning card.
