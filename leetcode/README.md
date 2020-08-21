@@ -47,7 +47,7 @@
 
 ## hash table & hash set
 - design **705** **706** 
-- basic **349** **1** **217** **136** **202** **205**
+- basic **349** **1** **217** **136** **202** **205** **599**
 
 
 **Bold** is from explore learning card.
