@@ -4,10 +4,10 @@
 
 - dedup 28 80
 - search 33 240 81 493
-- hash count 169 219 136
+- hash count 169 136
 - on-line 53
 - sort 179 493
-- set 217 219 220
+- set 217 220
 - bit 136 137
 - misc 238 189 54
 - backtrack 46 47 78 90 39 40 
@@ -47,7 +47,8 @@
 
 ## hash table & hash set
 - design **705** **706** 
-- basic **349** **1** **217** **136** **202** **205** **599**
-
+- basic **349** **1** **217** **136** **202** **205** 
+- occurrence **599** **387** **350** **219**
+- custom key **49**
 
 **Bold** is from explore learning card.
