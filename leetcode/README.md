@@ -41,14 +41,15 @@
 - dp **494**
 
 ## number
-- bit 191
+- bit 191 371
 - recursion 50 263
 - misc 1296 846
 
 ## hash table & hash set
 - design **705** **706** 
 - basic **349** **1** **217** **136** **202** **205** 
-- occurrence **599** **387** **350** **219**
-- custom key **49**
+- occurrence **599** **387** **350** **219** **771** **3** **454**
+- custom key **49** **652**
+- bit **36**
 
 **Bold** is from explore learning card.
