@@ -53,4 +53,7 @@
 - custom key **49** **652**
 - bit **36**
 
+## binary search
+- basic **704** **69** **374**
+
 **Bold** is from explore learning card.
