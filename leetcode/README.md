@@ -54,6 +54,6 @@
 - bit **36**
 
 ## binary search
-- basic **704** **69** **374**
+- basic **704** **69** **374** **278** **53**
 
 **Bold** is from explore learning card.
