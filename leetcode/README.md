@@ -55,5 +55,6 @@
 
 ## binary search
 - basic **704** **69** **374** **278** **53** **34** **658
+- custom compare **4**
 
 **Bold** is from explore learning card.
