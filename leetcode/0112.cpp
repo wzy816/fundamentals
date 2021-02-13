@@ -1,22 +1,28 @@
-/*
-102. Binary Tree Level Order Traversal
-Given a binary tree, return the level order traversal of its nodes' values. (ie, from left to right, level by level).
+/*112. Path Sum
+Given the root of a binary tree and an integer targetSum, return true if the tree has a root-to-leaf path such that adding up all the values along the path equals targetSum.
 
-For example:
-Given binary tree [3,9,20,null,null,15,7],
-    3
-   / \
-  9  20
-    /  \
-   15   7
+A leaf is a node with no children.
 
-return its level order traversal as:
+Example 1:
 
-[
-  [3],
-  [9,20],
-  [15,7]
-]
+Input: root = [5,4,8,11,null,13,4,7,2,null,null,null,1], targetSum = 22
+Output: true
+
+Example 2:
+
+Input: root = [1,2,3], targetSum = 5
+Output: false
+
+Example 3:
+
+Input: root = [1,2], targetSum = 0
+Output: false
+
+Constraints:
+
+The number of nodes in the tree is in the range [0, 5000].
+-1000 <= Node.val <= 1000
+-1000 <= targetSum <= 1000
 */
 
 /**
@@ -31,32 +37,18 @@ return its level order traversal as:
  * };
  */
 class Solution {
-int level;
-vector<TreeNode*> t{};
-vector<vector<int>> ret{};
 public:
-    vector<vector<int>> levelOrder(TreeNode* root) {
+    bool hasPathSum(TreeNode* root, int targetSum) {
         if(!root){
-            return ret;
+            return false;
         }
-        t.push_back(root);
-        level = 0;
-        
-        while(t.size()> 0){
-            vector<TreeNode*> next_run{};
-            vector<int> items;
-            for(int i=0;i<t.size();i++){
-                items.push_back(t[i]->val);
-                if(t[i]->left){
-                    next_run.push_back(t[i]->left);
-                }
-                if(t[i]->right){
-                    next_run.push_back(t[i]->right);
-                }
+        if(!root->left && !root->right){
+            if(root->val == targetSum){
+                return true;
+            }else{
+                return false;
             }
-            t = next_run;
-            ret.push_back(items);
         }
-        return ret;
+        return hasPathSum(root->left, targetSum-root->val) || hasPathSum(root->right, targetSum-root->val);
     }
 };
