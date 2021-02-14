@@ -34,39 +34,71 @@ Return the following binary tree:
 
 // recursion with vector slicing
 
+// class Solution {
+// public:
+//     TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) {
+//         int max = inorder.size();
+//         if(max == 0){
+//             return nullptr;
+//         }
+        
+//         TreeNode* root = new TreeNode(postorder[max-1]);
+//         if(max>1){
+//             int index=0;
+//             for(int i=0;i<max;i++){
+//                 if(inorder[i] == root->val){
+//                     index = i;
+//                     break;
+//                 }
+//             }
+            
+//             if(index>0){
+//                 vector<int> ino(index);
+//                 vector<int> pos(index);
+//                 copy(inorder.begin(), inorder.begin()+index, ino.begin());
+//                 copy(postorder.begin(), postorder.begin()+index, pos.begin());
+//                root->left = buildTree(ino, pos);
+//             }
+//             if(index<max-1){
+//                 vector<int> ino(max-index-1);
+//                 vector<int> pos(max-index-1);
+//                 copy(inorder.begin()+index+1, inorder.end(), ino.begin());
+//                 copy(postorder.begin()+index, postorder.end()-1, pos.begin());
+//                 root->right = buildTree(ino,pos);
+//             }
+//         }
+//         return root;
+//     }
+// };
+
+//
 class Solution {
 public:
-    TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) {
-        int max = inorder.size();
-        if(max == 0){
-            return nullptr;
-        }
-        
-        TreeNode* root = new TreeNode(postorder[max-1]);
-        if(max>1){
-            int index=0;
-            for(int i=0;i<max;i++){
-                if(inorder[i] == root->val){
+    TreeNode* helper(vector<int>& ino, vector<int>& pos, int inoStart,int inoEnd, int posStart, int posEnd){
+        TreeNode* root = new TreeNode(pos[posEnd-1]);
+        if(inoEnd - inoStart > 1){
+            int index=inoStart;
+            for(int i=inoStart;i<inoEnd;i++){
+                if(ino[i] == root->val){
                     index = i;
                     break;
                 }
+            }        
+            if(index>inoStart){
+               root->left = helper(ino, pos, inoStart, index, posStart, posStart+index-inoStart);
             }
-            
-            if(index>0){
-                vector<int> ino(index);
-                vector<int> pos(index);
-                copy(inorder.begin(), inorder.begin()+index, ino.begin());
-                copy(postorder.begin(), postorder.begin()+index, pos.begin());
-               root->left = buildTree(ino, pos);
-            }
-            if(index<max-1){
-                vector<int> ino(max-index-1);
-                vector<int> pos(max-index-1);
-                copy(inorder.begin()+index+1, inorder.end(), ino.begin());
-                copy(postorder.begin()+index, postorder.end()-1, pos.begin());
-                root->right = buildTree(ino,pos);
+            if(index<inoEnd-1){
+                root->right = helper(ino,pos, index+1,  inoEnd, posStart+index-inoStart, posEnd-1);
             }
         }
         return root;
     }
+    TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder) {
+        int l = inorder.size();
+        if(l == 0){
+            return nullptr;
+        }
+        return helper(inorder, postorder, 0, l, 0, l);
+    }
+
 };
