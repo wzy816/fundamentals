@@ -42,3 +42,58 @@ public:
         }
     }
 };
+
+// dp
+class Solution {
+public:
+    int findMaxForm(vector<string>& strs, int m, int n) {
+        vector<vector<int>> state;
+        
+        for(int i=0;i<strs.size();++i){
+            
+            // init state by copy from last
+            // state represent 0-m * 0-n grid
+            // cell value means selected set size
+            vector<int> s((m+1)*(n+1),0);
+            if(i > 0){
+                s = vector<int>(state[i-1]);
+            }
+            
+            // count 1 and 0 of current str
+            int zero = 0;
+            int one = 0;
+            for(char ch : strs[i]){
+                if(ch == '0'){
+                    zero++;
+                }
+                if(ch == '1'){
+                    one++;
+                }
+            }
+            // use current str only
+            if(zero<=m && one<=n && s[one*(m+1)+zero] == 0){
+                s[one*(m+1)+zero] = 1;
+            }
+            // use current str over previous set
+            for(int j =0;j<=m;++j){
+                for(int k=0;k<=n;++k){
+                    int index = k*(m+1)+j;
+                    if(i > 0 && state[i-1][index] > 0){
+                        if(j+zero <= m && k+one<= n){
+                            int new_index = (k+one)*(m+1)+ (j+zero);
+                            s[new_index] = max( s[new_index], state[i-1][index]+1);
+                        }
+                    }
+                }
+            }
+            state.push_back(s);
+        }
+        
+        // find max size from last state
+        int ans = 0;
+        for(int num: state[state.size()-1]){
+            ans = max(ans,num);
+        }
+        return ans;
+    }
+};
