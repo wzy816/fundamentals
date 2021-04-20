@@ -97,3 +97,57 @@ public:
         return ans;
     }
 };
+
+// dp with multidimenional array 
+class Solution {
+public:
+    int findMaxForm(vector<string>& strs, int m, int n) {
+        int steps= strs.size();
+        int state[steps][m+1][n+1];
+        memset(state,0,sizeof(state));
+        
+        for(int i=0;i<steps;++i){
+            
+            // init state by copy from last
+            if(i > 0){
+                copy(&state[i-1][0][0], &state[i-1][0][0]+(m+1)*(n+1),&state[i][0][0]);
+            }
+            
+            // count 1 and 0 of current str
+            int zero = 0;
+            int one = 0;
+            for(char ch : strs[i]){
+                if(ch == '0'){
+                    zero++;
+                }
+                if(ch == '1'){
+                    one++;
+                }
+            }
+            // use current str only
+            if(zero<=m && one<=n && state[i][zero][one] == 0){
+                state[i][zero][one] = 1;
+            }
+            // use current str over previous set
+            for(int j =0;j<=m;++j){
+                for(int k=0;k<=n;++k){
+                    if(i > 0 && state[i-1][j][k] > 0){
+                        if(j+zero <= m && k+one<= n){
+                            state[i][j+zero][k+one] = max(state[i][j+zero][k+one], state[i-1][j][k]+1);
+                        }
+                    }
+                }
+            }
+        }
+        
+        // find max size from last state
+        int ans = 0;
+        for(int j =0;j<=m;++j){
+            for(int k=0;k<=n;++k){
+                ans = max(ans, state[steps-1][j][k]);
+            }
+        }
+
+        return ans;
+    }
+};
