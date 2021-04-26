@@ -18,7 +18,7 @@ public:
         int j = 0;
         while(j< k && j < n-1){
             w.insert(nums[j]);
-            ++j;
+            ++jop;
         }
         
         // 
